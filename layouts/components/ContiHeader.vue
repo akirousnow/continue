@@ -12,11 +12,11 @@ const { openDialog } = useLoginDialog();
 const handleCommand = (command: string) => {
   useRouter().push({ path: command });
 };
-//检查是否登陆
 
 watchEffect(() => {
   isLogin.value = !!useToken().getToken().value;
 });
+//检查是否登陆
 </script>
 
 <template>
