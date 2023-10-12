@@ -1,5 +1,5 @@
 export default defineNuxtConfig({
-  devtools: { enabled: true },
+  devtools: { enabled: false },
   modules: [
     "@pinia/nuxt",
     "@nuxt/devtools",
@@ -18,11 +18,5 @@ export default defineNuxtConfig({
       autoprefixer: {},
     },
   },
-  generate: {
-    fallback: true,
-    routes: async () => {
-      const { data } = await axios.get('https://api.example.com/posts')
-      return data.map(post => `/posts/${post.id}`)
-    }
-  }
+
 });
