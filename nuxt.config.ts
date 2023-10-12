@@ -18,4 +18,11 @@ export default defineNuxtConfig({
       autoprefixer: {},
     },
   },
+  generate: {
+    fallback: true,
+    routes: async () => {
+      const { data } = await axios.get('https://api.example.com/posts')
+      return data.map(post => `/posts/${post.id}`)
+    }
+  }
 });
