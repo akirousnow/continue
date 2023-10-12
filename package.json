@@ -1,0 +1,28 @@
+{
+  "name": "nuxt-app",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare"
+  },
+  "devDependencies": {
+    "@element-plus/nuxt": "^1.0.6",
+    "@nuxt/devtools": "latest",
+    "autoprefixer": "^10.4.16",
+    "element-plus": "^2.3.14",
+    "nuxt": "^3.7.3",
+    "postcss": "^8.4.31",
+    "tailwindcss": "^3.3.3"
+  },
+  "dependencies": {
+    "@nuxtjs/tailwindcss": "^6.8.0",
+    "@pinia/nuxt": "^0.4.11",
+    "js-cookie": "^3.0.5",
+    "pinia": "^2.1.6",
+    "volar-service-vetur": "^0.0.14"
+  }
+}
