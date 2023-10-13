@@ -1,5 +1,5 @@
 export default defineNuxtConfig({
-  devtools: { enabled: true },
+  devtools: { enabled: false },
   modules: [
     "@pinia/nuxt",
     "@nuxt/devtools",
@@ -7,16 +7,15 @@ export default defineNuxtConfig({
     "@nuxtjs/tailwindcss",
   ],
   css: ["/assets/css/main.css"],
-  runtimeConfig: {
-    public: {
-      baseURL: "http://localhost:8080",
-    },
-  },
+  // runtimeConfig: {
+  //   public: {
+  //     baseURL: "http://localhost:8080",
+  //   },
+  // },
   postcss: {
     plugins: {
       tailwindcss: {},
       autoprefixer: {},
     },
   },
-  publicPath: "/YourRepoName/",
 });
