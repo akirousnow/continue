@@ -18,5 +18,5 @@ export default defineNuxtConfig({
       autoprefixer: {},
     },
   },
-
+  publicPath: "/YourRepoName/",
 });

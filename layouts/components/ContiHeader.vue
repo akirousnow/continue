@@ -36,7 +36,7 @@ watchEffect(() => {
     </div>
     <el-dropdown v-else @command="handleCommand">
       <div
-        class="bg-[url('/public/img/head.png')] bg-no-repeat w-10 h-10 bg-cover rounded-3xl"
+        class="bg-[url('/img/head.png')] bg-no-repeat w-10 h-10 bg-cover rounded-3xl"
       ></div>
 
       <template #dropdown>
